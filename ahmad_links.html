@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmad Sapy — Links</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0d0d;
+    --surface: #151515;
+    --border: #2a2a2a;
+    --accent: #c8a96e;
+    --text: #e8e2d9;
+    --muted: #6b6560;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .grain {
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .tag {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 8vw, 52px);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 40px;
+    letter-spacing: 0.03em;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, background 0.2s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: var(--accent);
+    background: #1c1a17;
+  }
+
+  .qr-wrap {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: white;
+    padding: 4px;
+  }
+
+  .qr-wrap img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    image-rendering: pixelated;
+  }
+
+  .card-text {
+    flex: 1;
+  }
+
+  .platform {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .card-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .card-url {
+    font-size: 11px;
+    color: var(--muted);
+    word-break: break-all;
+  }
+
+  .arrow {
+    color: var(--accent);
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 32px 0;
+  }
+
+  .field {
+    margin-bottom: 16px;
+  }
+
+  .field-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .field-value {
+    font-size: 13px;
+    color: var(--text);
+  }
+
+  .footer {
+    margin-top: 40px;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="container">
+  <div class="tag">Computer Science · Data Science</div>
+  <h1>Ahmad Sapy</h1>
+  <p class="subtitle">Chabot College &mdash; Transferring to UC Berkeley &mdash; Hayward, CA</p>
+
+  <a class="card" href="https://github.com/AHMAD-ARZIN-CS" target="_blank">
+    <div class="qr-wrap">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAAC50lEQVR4nO2cX4rbMBCHv6kMfZRhD7BHUW7QI5UeaW9gHyUHKEiPCzbTB40cJ0s3XUiDBTMPJra/h4Fh/ugnOaJ8xeZvX8LBeeed/698EbNTGZBTEZETq4iMwCwD7f3wHH+cfyA/AGEBQAB0flWYBXT+AZLyC6QJoLw8wR/nH8sPAIgFeRXSeVgkKUg6CzqPASgjpLdn+OP8Y/lhfxOXQSkAZUTnMSxCzE/1x/nH8sPNvaS3VZhHkKSrfJiuj+a/859bja+FsYwwv+pWrkFq640KNbGP5r/z9/m1jsdAUNJ5gJRBTuW7QhlgFrFx+pD+O/93Gyw5ASirML++CwA6j4jOY2BfpI/mv/N3TFVVqambAeJiz1IOqlqfGaLT0fx3/o6p6oJOBNUJIOkCYKFV1aU+U80e3/54iyDxOoxYYlt2xwWI6vHtjsfSNINOcYGUg9ZY1tTNQS8l3OPbG0/rsEsrzXG5fatTVLXL0fx3/o6pbgk7xcViqTnYfDUBpG3c8vh2xlt8U2uzN0W6/krq+dspv2u9bdLaBqpqLYl9vuqUj6pyIqjIGJSUV4HyfRuy3sW6c36SP84/kN/3392CN4OVa2x+9vrcJd+WuTmYClnHqLjpV1XfUPX63CVv+lVVNWL7ZZoWAMH1jY75XUBtTKYpHaZJX8lZHt/OeNM3UivSLWubqlF3Gi5vj+a/83esrX9bm91dMi2nvT73yrf5uW4YBW0D86Z0aFOiXX/ukd9GK1W71fZruuYmj2+H/G4b8LKT1LK2dV174fHtj2/7R8BFZr4c2DD9OW+bSEfz3/nP7fb7BdJZUFgHiBk7f1VAYFiO57/z/8Lbx0VFxOToMqCaV5GfeZUqTD/TH+cfxX843w5haZ8u/EbnEZTyUi/H89/5O3ZZH10WvFwfp9yNW95/u+T1csgOVoH4LsxjG51/javI6Yn+OP8o/np+tvM5dgj6Snp2/apL/uMXZJ+a/z+D884fiP8D6Y6LYJJWh8wAAAAASUVORK5CYII=" alt="GitHub QR">
+    </div>
+    <div class="card-text">
+      <div class="platform">GitHub</div>
+      <div class="card-name">AHMAD-ARZIN-CS</div>
+      <div class="card-url">github.com/AHMAD-ARZIN-CS</div>
+    </div>
+    <div class="arrow">↗</div>
+  </a>
+
+  <a class="card" href="https://www.linkedin.com/in/ahmad-sapy-a95606382/" target="_blank">
+    <div class="qr-wrap">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAD5ElEQVR4nO2dS4rkOBBAX4wMvZShDtBHsW/QRxr6ZvZR6gAD8rLAJnohhT5ZA8MUnWRmE7EoUrYftiGIv1yifE32v74IgpNOOunkDXlIkZVL2OdLZAVkPSbsBIjMYFdOj3taJ5+ORDUFVVVVFj2BqArxJB/c8q+yZFHVTGyv9Z5O3psspoWgqglYkh1b3r8p+xxUZIZstNYHP62Tz0xewj6D/pyD6hY/8lLWe97TyVcnp35xzMiSQEDQ5X2CJc0Ch/zOezr5Z5FZh0qCHxV2AYgJ9h+KEM+JZbsmOKYzX8LxqKd18hlJcgAEwJKC/sefIh5TO9mJdpJAt3YsBcvBAIj9pa5DTo5kKf7MIGtUlZWrVoWuEgst7yKyHtNIfv2eTv4pZC7+2K9aEErkBL+cSKAbQYHi1dwOOdmTJc6R9RDJy/276dVmJUf5Wz/EypDnA5/WyWcjJzjeTt1XUDgt/TKXJcv7dAJBhWNGdwmnPu5pnXxGsvQwAHIjY4uqLKk4L9WckoH1P0677rXe08n7kSXYqYkYi541OSsOrXTJuvzN4yEnO8mak0OcWHquFl1bH3axdmvpyHp9yMlezA7VRj217hjNNhFVc16WrVR0X+ZkJ1l9tnhCTty1WZ/i1UqJ2lTKfZmTo/Sl51g0x8yN6VC+Llmq7zG1k73k3B6Ot1OWVJqvmhuvBBXiP1aZjoos74Ln9k6OUtKvXJ02R6WjMaonctjtdWonB2murLixBM2rWX2oxENWKXJf5mQnn2yOnparpVDnqWsZMrfx3Q45OZKllyorQdnlm4p8V2WvLXugFBp/zpd4v8zJUczIhFxULGapBUC0bMyslNshJwex+lDzVtSCUNsWdNa4yUrZrkNOmlhbrE/JSru11oyquytuzO2Qk72Y82rLam5sOZy1VN91yEmTVvexsY9+XLFFRl3F2vtlTg5iEx9q+tJin9R3X82N1ZnZ13pPJ+9HDt16bcbIzvaRkWo/GfJa7+nk/UhaCn/jt9rGsy4oWpLbISc/k7WvUQuIsgLsM6WNv4sN6xNPytcbXu49nbwT2Y1I27L+StiJYQrEe65OjqKdJIZR6qiWoeWQqXk61yEnB7L7DhpA1Nw5U02XqOqH6JY3noHkDbDeL3Oyl+E7aNqNvH7eIOR2yMl/FcvLwjg/pN1n9Kx6BNSuh+uQkya337BSjnDCIWjZ7Bo0f5Non8MJxxu6r496WiefkRzskO1RvNnD0R1ro7Fuh5w0uYmHyhhsopSGwFxbC4q8X+ZkLxPQxhWviSVdubyo+5y07PoA2NcAxA/xfR1ODmIa8b/F/9eCk046+ZvIX/LiG+6Xeje/AAAAAElFTkSuQmCC" alt="LinkedIn QR">
+    </div>
+    <div class="card-text">
+      <div class="platform">LinkedIn</div>
+      <div class="card-name">Ahmad Sapy</div>
+      <div class="card-url">linkedin.com/in/ahmad-sapy-a95606382</div>
+    </div>
+    <div class="arrow">↗</div>
+  </a>
+
+  <div class="divider"></div>
+
+  <div class="field">
+    <div class="field-label">Email</div>
+    <div class="field-value">arzinsy@gmail.com</div>
+  </div>
+  <div class="field">
+    <div class="field-label">Focus</div>
+    <div class="field-value">Python &middot; Data Science &middot; Cybersecurity &middot; Visual Design</div>
+  </div>
+  <div class="field">
+    <div class="field-label">GPA</div>
+    <div class="field-value">4.0 &mdash; Chabot College, expected transfer Fall 2027</div>
+  </div>
+
+  <div class="footer">Scan a QR code or tap a card to visit</div>
+</div>
+</body>
+</html>
